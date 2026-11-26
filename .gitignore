@@ -1,0 +1,14 @@
+# Documentos internos de pesquisa e dossiê (não publicar)
+dados.txt
+dossie_autoescola.md
+
+# Vercel & build
+.vercel
+
+# Sistema e editores
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+.vscode/
+.idea/
