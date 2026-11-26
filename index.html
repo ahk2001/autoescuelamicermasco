@@ -1166,11 +1166,22 @@
         overflow-x: auto;
         overflow-y: hidden;
         scroll-snap-type: x mandatory;
+        scroll-padding-inline: 1rem;
         -webkit-overflow-scrolling: touch;
         scrollbar-width: none;
         -ms-overflow-style: none;
         gap: 1rem;
-        padding: 0.25rem 0.25rem 0.5rem;
+        margin: 0 -1rem;
+        padding: 0.25rem 1rem 0.75rem;
+      }
+      @media (min-width: 640px) {
+        .pillars-editorial-grid,
+        .prof-editorial-grid,
+        .team-family-grid {
+          scroll-padding-inline: 1.5rem;
+          margin: 0 -1.5rem;
+          padding: 0.25rem 1.5rem 0.75rem;
+        }
       }
       .pillars-editorial-grid::-webkit-scrollbar,
       .prof-editorial-grid::-webkit-scrollbar,
@@ -1181,8 +1192,8 @@
       }
       .pillars-editorial-grid > .pillar-editorial-card,
       .prof-editorial-grid > .prof-editorial-card {
-        flex: 0 0 85%;
-        max-width: 85%;
+        flex: 0 0 84%;
+        max-width: 84%;
         scroll-snap-align: start;
       }
       .team-family-grid > .team-member-card {
@@ -1246,6 +1257,14 @@
       scrollbar-width: none;
       padding: 0.5rem 0.25rem 1.25rem;
       cursor: grab;
+    }
+
+    @media (max-width: 768px) {
+      .gallery-carousel-track {
+        margin: 0 -1rem;
+        padding: 0.5rem 1rem 1.25rem;
+        scroll-padding-inline: 1rem;
+      }
     }
 
     .gallery-carousel-track::-webkit-scrollbar { display: none; }
