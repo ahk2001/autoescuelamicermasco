@@ -2,6 +2,10 @@
 dados.txt
 dossie_autoescola.md
 
+# Ambientes Python locais
+.venv/
+requirements.txt
+
 # Vercel & build
 .vercel
 
